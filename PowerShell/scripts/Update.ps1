@@ -113,7 +113,7 @@ Function Update($inputFile, $outpuFile, $attribute, [Parameter(Mandatory = $fals
         $projects_shortcode = Concat_Projects_To_Shortcode $dataUserProjects $projectShortCodes
         $projectsList = Concat_Projects $dataUserProjects
 
-        AD_Check_User $firstName $lastName $email $department $projects_shortcode $projectsList $dataProjectsAll $removedProjectUsers $attribute $outputFile "NotCheck" $test
+        AD_Check_User $firstName $lastName $email $department $projects_shortcode $projectsList $attribute $outputFile $dataProjectsAll "NotCheck" $test $removedProjectUsers
     }
 
     If($test -ne "TEST"){

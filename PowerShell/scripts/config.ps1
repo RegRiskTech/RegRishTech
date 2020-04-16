@@ -286,7 +286,7 @@ $selectMemberButton.Add_Click({
             $dataProjects = ""
 
             If ($case -eq 0){
-                If(AD_Check_User $firstName $lastName $email $department $projects_shortcode $projectsList $dataProjects $attribute $outputFile "Check"){
+                If(AD_Check_User $firstName $lastName $email $department $projects_shortcode $projectsList $attribute $outputFile $dataProjects "Check"){
                     $check = $false
                 }
             }

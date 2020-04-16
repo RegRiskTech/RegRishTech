@@ -109,7 +109,7 @@ Function removeProjects($projectsAD,$projectsDB){
     }
 }
 
-Function AD_Check_User($firstName, $lastName, $emailDB, $department, $projectsDB, $projectsList, [Parameter(Mandatory = $false)]$dataProjects, $removedProjectUsers, $attribute, $outputFile, [Parameter(Mandatory = $false)]$check, [Parameter(Mandatory = $false)]$test){
+Function AD_Check_User($firstName, $lastName, $emailDB, $department, $projectsDB, $projectsList, $attribute, $outputFile, [Parameter(Mandatory = $false)]$dataProjects, [Parameter(Mandatory = $false)]$check, [Parameter(Mandatory = $false)]$test, [Parameter(Mandatory = $false)]$removedProjectUsers){
     $user = $firstName + " " + $lastName
     $username = $emailDB.Split("@")[0]
 
