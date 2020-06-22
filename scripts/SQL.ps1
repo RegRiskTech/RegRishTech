@@ -5,8 +5,6 @@ Date: 28/01/20
 Copyright (C) 2020 RegRisk Technology
 *********************************************************************************#>
 
-Clear-Host
-
 Function SQL_Query_Database($inputfile, $query){
     $server= "RegRiskTechDemo"
     $database = "RRTDatabases"

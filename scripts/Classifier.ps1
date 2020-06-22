@@ -56,15 +56,12 @@ Function Classifier_Add_Project_And_Conditions($project, $attribute, $shortcode)
     Add-ConditionType -Condition $condition -ConditionTypeName 'Dynamic Clearance User Properties'
 
     Set-Condition -Condition $condition
-
-    #************************************************************************************************************************************************
-
+    
     # Step 7: Select Policy Selectory Value as True
-    Set-PolicySelectorValue -PolicyName 'Commercial Policy' -SelectorName Projects -ValueName $project -Selected $True
+    Set-PolicySelectorValue -PolicyName 'Standard' -SelectorName Projects -ValueName $project -Selected $True
 
     # Step 8: Add Policy Connected Selector Value
-    ####################### NEED TO MAKE SURE CONNECT SELECTORS IS TURNED ON SOMEHOW *******************************************************************
-    Add-PolicyConnectedSelectorValue -PolicyName 'Commercial Policy' -Path \\Projects -SelectorName Projects -ValueName $project
+    Add-PolicyConnectedSelectorValue -PolicyName 'Standard' -Path \\Projects -SelectorName Projects -ValueName $project
 
     # Step 9: Add Policy Suggested Classification
     $SelectorsOn = New-Object System.Collections.Generic.List[ClassifierAdminModels.Libraries.Selectors.Values.SelectorValueBase]
@@ -76,7 +73,7 @@ Function Classifier_Add_Project_And_Conditions($project, $attribute, $shortcode)
 
     $udm = Get-UserMessage -Name "REF - $project"
 
-    Add-PolicySuggestedClassification -PolicyName 'Commercial Policy' -SuggestedName $project -SelectorValuesToSet $SelectorsOn -CannotApplyUserMessage $udm -FulfilledConditions $Conditions -ApplyWhenPossible $true
+    Add-PolicySuggestedClassification -PolicyName 'Standard' -SuggestedName $project -SelectorValuesToSet $SelectorsOn -CannotApplyUserMessage $udm -FulfilledConditions $Conditions -ApplyWhenPossible $true
 
     # Step 10: Add Dynamic Clearance for Internal and External
     $condition = Get-Condition "CLR - $project Internal"
@@ -84,27 +81,21 @@ Function Classifier_Add_Project_And_Conditions($project, $attribute, $shortcode)
     Set-SelectorClearance -Clearance $clearance -Selector Projects -Value $project -Enabled $True
 
     $dynamicClearance = New-DynamicClearance -Name "$project Internal" -Clearance $clearance -Conditions $condition
-
-    $condition = Get-Condition "CLR - $project External"
-    $clearance = New-SelectorClearance -Selector Projects -Value $project -Enabled $True
-    Set-SelectorClearance -Clearance $clearance -Selector Projects -Value $project -Enabled $True
-
-    $dynamicClearance = New-DynamicClearance -Name "$project External" -Clearance $clearance -Conditions $condition
 }
 
 Function Classifier_Remove_Project_And_Conditions($project, $removedProjectUsers){
     # Step 10: Remove Dynamic Clearance
     Remove-DynamicClearance -Name "$project Internal" -Confirm:$false
-    Remove-DynamicClearance -Name "$project External" -Confirm:$false
+    #Remove-DynamicClearance -Name "$project External" -Confirm:$false
 
     # Step 9: Remove Policy Suggested Classification
-    Remove-PolicySuggestedClassification -PolicyName 'Commercial Policy' -SuggestedName $project -Confirm:$false
+    Remove-PolicySuggestedClassification -PolicyName 'Standard' -SuggestedName $project -Confirm:$false
 
     # Step 8: Remove Policy Connected Selector Value
-    Remove-PolicyConnectedSelectorValue -PolicyName 'Commercial Policy' -Path \\Projects\$project -Confirm:$false
+    Remove-PolicyConnectedSelectorValue -PolicyName 'Standard' -Path \\Projects\$project -Confirm:$false
 
     # Step 7: Remove Policy Selector Value
-    Set-PolicySelectorValue -PolicyName 'Commercial Policy' -SelectorName Projects -ValueName $project -Selected $False
+    Set-PolicySelectorValue -PolicyName 'Standard' -SelectorName Projects -ValueName $project -Selected $False
 
     # Step 6 & 5 & 4: Remove Conditions
     $con = Get-Condition -Name "CLR - $project External"
@@ -168,7 +159,22 @@ Function Classifier_Check_Project($project, $outputFile, $projectShortCodes, [Pa
 
     If($check -ne "Check"){
         If ($project_exists -eq $true){
-            #Write-Output "Project $project already exists`r`n"
+            # do check to see if the Connect Selector is turned off
+            $distributionNode = Get-PolicyConnectedSelector -PolicyName Standard -Path \\Projects
+            $connectorList = ForEach-Object -InputObject $distributionNode.Elements -Process {$_.SelectorValueObject} | Select-Object -ExpandProperty ValueName
+
+            If($project -Notin $connectorList){
+                If($test -ne "TEST"){
+                    Add-PolicyConnectedSelectorValue -PolicyName 'Standard' -Path \\Projects -SelectorName Projects -ValueName $project
+                    $updateAction = "Project $project has been turned on in Classifier Administration"
+                    Update_Action_Log $outputFile "" $updateAction
+                    Add-Output -Message $updateAction
+                }
+                Else{
+                    $updateAction = "Project $project will be turned on in Classifier Administration"
+                    Add-Output -Message $updateAction
+                }
+            }
         }
         Else{
             If($test -ne "TEST"){
@@ -191,7 +197,6 @@ Function Classifier_Check_Project($project, $outputFile, $projectShortCodes, [Pa
     }
 }
 
-# CURRENTLY JUST GETTING PROJECTS VALUES *****************************************************************************************
 Function Classifier_Check_Project_Code(){
     $projectCodes = @{}
     $valueSelectors = Get-SelectorValue -SelectorName Projects | Select -ExpandProperty ValueName
@@ -211,17 +216,24 @@ Function Classifier_Remove_Project($project, $removedProjectUsers, $outputFile, 
         $valueSelectors = Get-SelectorValue -SelectorName $selector | Select -ExpandProperty ValueName
         foreach ($value in $valueSelectors){
             If($project -eq $value){
-                If($test -ne "TEST"){
-                    Classifier_Remove_Project_And_Conditions $project $removedProjectUsers
 
-                    $updateAction = "Project $project has been removed from Classifier Administration"
-                    Update_Action_Log $outputFile "" $updateAction
-                    Add-Output -Message $updateAction
-                }
-                Else{
-                    $updateAction = "Project $project will be removed from Classifier Administration"
-                    Add-Output -Message $updateAction
-                }
+
+                $distributionNode = Get-PolicyConnectedSelector -PolicyName Standard -Path \\Projects
+                $connectorList = ForEach-Object -InputObject $distributionNode.Elements -Process {$_.SelectorValueObject} | Select-Object -ExpandProperty ValueName
+
+                #Turn off connect selector
+                If($project -in $connectorList){
+                    If($test -ne "TEST"){
+                        Remove-PolicyConnectedSelectorValue -PolicyName 'Standard' -Path \\Projects\$project -Confirm:$false
+                        $updateAction = "Project $project has been turned off in Classifier Administration"
+                        Update_Action_Log $outputFile "" $updateAction
+                        Add-Output -Message $updateAction
+                    }
+                    Else{
+                        $updateAction = "Project $project will be turned off in Classifier Administration"
+                        Add-Output -Message $updateAction
+                    }
+                }             
             }
         } 
     }
@@ -320,9 +332,8 @@ Function Classifier_Publish_Config(){
     # Publish as test config
     #Publish-ServerConfiguration -Location TestFolder -TestName "ProjectNew" -Reason "Project Added"
     
-    
     # Real
-    #Publish-ServerConfiguration -Location DefaultFolder -TestName "RealProjectUpdate" -Reason "Project Added"
+    Publish-ServerConfiguration -Location DefaultFolder -Reason "Update"
 
 }
 
