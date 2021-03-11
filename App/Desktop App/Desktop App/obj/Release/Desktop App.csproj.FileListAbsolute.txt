@@ -1,0 +1,38 @@
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\bin\Release\Desktop App.exe.config
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\bin\Release\Desktop App.exe.manifest
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\bin\Release\Desktop App.application
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\bin\Release\Desktop App.exe
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\bin\Release\Desktop App.pdb
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\bin\Release\dje\Desktop App.resources.dll
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\bin\Release\Guna.UI2.dll
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\bin\Release\System.Management.Automation.dll
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Release\Desktop App.csprojAssemblyReference.cache
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Release\Desktop_App.ListItemCross.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Release\Desktop_App.ListItemProjectCross.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Release\Desktop_App.ListItemProjectTick.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Release\Desktop_App.ListItemTick.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Release\Desktop_App.Reporting.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Release\Desktop_App.testForm.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Release\Desktop_App.HomeForm.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Release\Desktop_App.HomeScreen.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Release\Desktop_App.ProjectAdd.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Release\Desktop_App.ProjectAddUsers.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Release\Desktop_App.ProjectData.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Release\Desktop_App.ProjectForm.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Release\Desktop_App.Properties.Resources.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Release\Desktop_App.userAdd.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Release\Desktop_App.UserAddProject.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Release\Desktop_App.ListItem.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Release\Desktop_App.ListItemProject.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Release\Desktop_App.UserData.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Release\Desktop_App.UserForm.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Release\Desktop_App.ProjectForm.dje.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Release\Desktop App.csproj.GenerateResource.cache
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Release\Desktop App.csproj.CoreCompileInputs.cache
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Release\dje\Desktop App.resources.dll
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Release\Desktop App.TrustInfo.xml
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Release\Desktop App.exe.manifest
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Release\Desktop App.application
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Release\Desktop App.csproj.CopyComplete
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Release\Desktop App.exe
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Release\Desktop App.pdb

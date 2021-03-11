@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>C:\Shares\RRTshare\Desktop App For Client\Publish Location\|\\tsclient\C\Users\Admin\Documents\|C:\Users\jbaldwin\Documents\Test Publish\|\\RegRiskTechDemo\Users\jbaldwin\Documents\Test Publish\|\\RegRiskTechDemo.REGRISKTECH.internal\Users\jbaldwin\Documents\Test Publish\</PublishUrlHistory>
+    <InstallUrlHistory>\\RegRiskTechDemo.REGRISKTECH.internal\Shares\RRTshare\Desktop App For Client\Publish Location\|\\RegRiskTechDemo.REGRISKTECH.internal\Users\jbaldwin\Documents\Test Publish\|\\RegRiskTechDemo\Users\jbaldwin\Documents\Test Publish\</InstallUrlHistory>
+    <SupportUrlHistory />
+    <UpdateUrlHistory />
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory />
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,56 @@
+C:\Users\Admin\Documents\Desktop App\Desktop App\Desktop App\bin\Debug\Desktop App.exe.config
+C:\Users\Admin\Documents\Desktop App\Desktop App\Desktop App\bin\Debug\Desktop App.exe
+C:\Users\Admin\Documents\Desktop App\Desktop App\Desktop App\bin\Debug\Desktop App.pdb
+C:\Users\Admin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop App.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop_App.Properties.Resources.resources
+C:\Users\Admin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop App.csproj.GenerateResource.cache
+C:\Users\Admin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop App.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop App.exe
+C:\Users\Admin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop App.pdb
+C:\Users\Admin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop_App.HomeScreen.resources
+C:\Users\Admin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop_App.ProjectForm.resources
+C:\Users\Admin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop_App.UserForm.resources
+C:\Users\Admin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop_App.HomeForm.resources
+C:\Users\Admin\Documents\Desktop App\Desktop App\Desktop App\bin\Debug\Desktop App.exe.manifest
+C:\Users\Admin\Documents\Desktop App\Desktop App\Desktop App\bin\Debug\Desktop App.application
+C:\Users\Admin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop App.TrustInfo.xml
+C:\Users\Admin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop App.exe.manifest
+C:\Users\Admin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop App.application
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\bin\Debug\Desktop App.exe.config
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\bin\Debug\Desktop App.exe.manifest
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\bin\Debug\Desktop App.application
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\bin\Debug\Desktop App.exe
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\bin\Debug\Desktop App.pdb
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\bin\Debug\dje\Desktop App.resources.dll
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\bin\Debug\Guna.UI2.dll
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop App.csprojAssemblyReference.cache
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop_App.ListItemCross.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop_App.ListItemTick.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop_App.testForm.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop_App.HomeForm.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop_App.HomeScreen.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop_App.ProjectAdd.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop_App.ProjectAddUsers.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop_App.ProjectData.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop_App.ProjectForm.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop_App.Properties.Resources.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop_App.userAdd.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop_App.UserAddProject.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop_App.ListItem.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop_App.ListItemProject.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop_App.UserData.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop_App.UserForm.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop_App.ProjectForm.dje.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop App.csproj.GenerateResource.cache
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop App.csproj.CoreCompileInputs.cache
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\dje\Desktop App.resources.dll
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop App.TrustInfo.xml
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop App.exe.manifest
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop App.application
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop App.csproj.CopyComplete
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop App.exe
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop App.pdb
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\bin\Debug\System.Management.Automation.dll
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop_App.Reporting.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop_App.ListItemProjectCross.resources
+C:\Users\jbaldwin\Documents\Desktop App\Desktop App\Desktop App\obj\Debug\Desktop_App.ListItemProjectTick.resources
